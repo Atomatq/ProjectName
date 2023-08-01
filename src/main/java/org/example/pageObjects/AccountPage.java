@@ -1,6 +1,7 @@
 package org.example.pageObjects;
 
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
@@ -31,7 +32,7 @@ public class AccountPage {
     @Step("Нажать кнопку 'Записать показатель'.")
     public MarkCreatePage createNewMark() {
         createMark.shouldBe(visible).click();
-        return page(MarkCreatePage.class);
+        return Selenide.page(MarkCreatePage.class);
     }
     @Step("Отфильтровать таблицу по показателю {type}.")
     public AccountPage selectMarkFilter(String type) {

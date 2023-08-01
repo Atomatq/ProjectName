@@ -1,7 +1,7 @@
 package org.example.pageObjects;
 
 import com.codeborne.selenide.SelenideElement;
-import org.example.help.calendar.DatePicker;
+import org.example.help.utils.DatePicker;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$x;

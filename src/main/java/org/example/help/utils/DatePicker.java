@@ -1,4 +1,4 @@
-package org.example.help.calendar;
+package org.example.help.utils;
 
 import com.codeborne.selenide.SelenideElement;
 
